@@ -1,0 +1,215 @@
+Framework,Network,TimetoTrain_mins_,Accuracy,Throughput,Instance Name,Provider,Cost To Train,GPU,Precision,BatchSize,Dataset,Hourly Cost
+MXNet,ResNet-50 v1.5,85,77.14 Top 1,"23,184 images/sec",p4d.24xlarge,AWS,46.467,8x A100,Mixed,192,ImageNet2012,32.8
+PyTorch,Mask R-CNN,176,.34 AP Segm,167 images/sec,p4d.24xlarge,AWS,96.213,8x A100,TF32,8,COCO 2014,32.8
+PyTorch,SSD v1.1,43,.25 mAP,"3,092 images/sec",p4d.24xlarge,AWS,23.507,8x A100,Mixed,128,COCO 2017,32.8
+PyTorch,Tacotron2,99,.56 Training Loss,"306,044 total output mels/sec",p4d.24xlarge,AWS,54.120,8x A100,TF32,128,LJSpeech 1.1,32.8
+PyTorch,WaveGlow,285,-5.84 Training Loss,"1,486,357 output samples/sec",p4d.24xlarge,AWS,155.800,8x A100,Mixed,10,LJSpeech 1.1,32.8
+PyTorch,Jasper,"3,600",3.53 dev-clean WER,603 sequences/sec,p4d.24xlarge,AWS,1968.000,8x A100,Mixed,64,LibriSpeech,32.8
+PyTorch,Transformer,214,27.78 BLEU Score,"470,914 tokens/sec",p4d.24xlarge,AWS,116.987,8x A100,Mixed,10240,wmt14-en-de,32.8
+PyTorch,FastPitch,216,.18 Training Loss,"1,040,206 frames/sec",p4d.24xlarge,AWS,118.080,8x A100,Mixed,32,LJSpeech 1.1,32.8
+PyTorch,GNMT V2,17,24.3 BLEU Score,"916,105 total tokens/sec",p4d.24xlarge,AWS,9.293,8x A100,Mixed,128,wmt16-en-de,32.8
+PyTorch,NCF,0.38,.96 Hit Rate at 10,"152,159,129 samples/sec",p4d.24xlarge,AWS,0.208,8x A100,Mixed,131072,MovieLens 20M,32.8
+PyTorch,BERT-LARGE,3,91.05 F1,922 sequences/sec,p4d.24xlarge,AWS,1.640,8x A100,Mixed,32,SQuaD v1.1,32.8
+PyTorch,Transformer-XL Large,408,14.03 Perplexity,"202,130 total tokens/sec",p4d.24xlarge,AWS,223.040,8x A100,Mixed,16,WikiText-103,32.8
+PyTorch,Transformer-XL Base,210,22.53 Perplexity,"628,500 total tokens/sec",p4d.24xlarge,AWS,114.800,8x A100,Mixed,128,WikiText-103,32.8
+PyTorch,BERT-Large Pre-Training P1,"2,379",-,"3,231 sequences/sec",p4d.24xlarge,AWS,1300.520,8x A100,Mixed,-,Wikipedia+BookCorpus,32.8
+PyTorch,BERT-Large Pre-Training P2,"1,377",1.34 Final Loss,630 sequences/sec,p4d.24xlarge,AWS,752.760,8x A100,Mixed,-,Wikipedia+BookCorpus,32.8
+PyTorch,BERT-Large Pre-Training E2E,"3,756",1.34 Final Loss,-,p4d.24xlarge,AWS,2053.280,8x A100,Mixed,-,Wikipedia+BookCorpus,32.8
+Tensorflow,ResNet-50 v1.5,95,76.97 Top 1,"20,388 images/sec",p4d.24xlarge,AWS,51.933,8x A100,Mixed,256,ImageNet2012,32.8
+Tensorflow,ResNext101,192,79.34 Top 1,"10,078 images/sec",p4d.24xlarge,AWS,104.960,8x A100,Mixed,256,Imagenet2012,32.8
+Tensorflow,SE-ResNext101,226,79.71 Top 1,"8,578 images/sec",p4d.24xlarge,AWS,123.547,8x A100,Mixed,256,Imagenet2012,32.8
+Tensorflow,U-Net Industrial,1,.99 IoU Threshold 0.99,"1,051 images/sec",p4d.24xlarge,AWS,0.547,8x A100,Mixed,2,DAGM2007,32.8
+Tensorflow,U-Net Medical,6,.9 Dice Score,952 images/sec,p4d.24xlarge,AWS,3.280,8x A100,Mixed,8,EM segmentation challenge,32.8
+Tensorflow,VAE-CF,1,.43 NDCG@100,"1,642,346 users processed/sec",p4d.24xlarge,AWS,0.547,8x A100,TF32,3072,MovieLens 20M,32.8
+Tensorflow,Wide and Deep,7,.66 MAP at 12,"3,662,293 samples/sec",p4d.24xlarge,AWS,3.827,8x A100,TF32,16384,Kaggle Outbrain Click Prediction,32.8
+Tensorflow,BERT-LARGE,11,91.48 F1,859 sequences/sec,p4d.24xlarge,AWS,6.013,8x A100,Mixed,24,SQuaD v1.1,32.8
+Tensorflow,Electra Base Fine Tuning,3,92.58 F1,"2,843 sequences/sec",p4d.24xlarge,AWS,1.640,8x A100,Mixed,32,SQuaD v1.1,32.8
+Tensorflow,EfficientNet-B4,"4,231",82.81 Top 1,"2,535 images/sec",p4d.24xlarge,AWS,2312.947,8x A100,Mixed,160,ImageNet2012,32.8
+Tensorflow,V-Net Medical,2,.84 Anterior DICE,"1,227 images/sec",p4d.24xlarge,AWS,1.093,8x A100,TF32,2,Hippocampus head and body from Medical Segmentation Decathlon,32.8
+MXNet,ResNet-50 v1.5,85,77.14 Top 1,"23,184 images/sec",ND96asr A100 v4,Azure,38.533,8x A100,Mixed,192,ImageNet2012,27.2
+PyTorch,Mask R-CNN,176,.34 AP Segm,167 images/sec,ND96asr A100 v5,Azure,79.787,8x A100,TF32,8,COCO 2014,27.2
+PyTorch,SSD v1.1,43,.25 mAP,"3,092 images/sec",ND96asr A100 v6,Azure,19.493,8x A100,Mixed,128,COCO 2017,27.2
+PyTorch,Tacotron2,99,.56 Training Loss,"306,044 total output mels/sec",ND96asr A100 v7,Azure,44.880,8x A100,TF32,128,LJSpeech 1.1,27.2
+PyTorch,WaveGlow,285,-5.84 Training Loss,"1,486,357 output samples/sec",ND96asr A100 v8,Azure,129.200,8x A100,Mixed,10,LJSpeech 1.1,27.2
+PyTorch,Jasper,"3,600",3.53 dev-clean WER,603 sequences/sec,ND96asr A100 v9,Azure,1632.000,8x A100,Mixed,64,LibriSpeech,27.2
+PyTorch,Transformer,214,27.78 BLEU Score,"470,914 tokens/sec",ND96asr A100 v10,Azure,97.013,8x A100,Mixed,10240,wmt14-en-de,27.2
+PyTorch,FastPitch,216,.18 Training Loss,"1,040,206 frames/sec",ND96asr A100 v11,Azure,97.920,8x A100,Mixed,32,LJSpeech 1.1,27.2
+PyTorch,GNMT V2,17,24.3 BLEU Score,"916,105 total tokens/sec",ND96asr A100 v12,Azure,7.707,8x A100,Mixed,128,wmt16-en-de,27.2
+PyTorch,NCF,0.38,.96 Hit Rate at 10,"152,159,129 samples/sec",ND96asr A100 v13,Azure,0.172,8x A100,Mixed,131072,MovieLens 20M,27.2
+PyTorch,BERT-LARGE,3,91.05 F1,922 sequences/sec,ND96asr A100 v14,Azure,1.360,8x A100,Mixed,32,SQuaD v1.1,27.2
+PyTorch,Transformer-XL Large,408,14.03 Perplexity,"202,130 total tokens/sec",ND96asr A100 v15,Azure,184.960,8x A100,Mixed,16,WikiText-103,27.2
+PyTorch,Transformer-XL Base,210,22.53 Perplexity,"628,500 total tokens/sec",ND96asr A100 v16,Azure,95.200,8x A100,Mixed,128,WikiText-103,27.2
+PyTorch,BERT-Large Pre-Training P1,"2,379",-,"3,231 sequences/sec",ND96asr A100 v17,Azure,1078.480,8x A100,Mixed,-,Wikipedia+BookCorpus,27.2
+PyTorch,BERT-Large Pre-Training P2,"1,377",1.34 Final Loss,630 sequences/sec,ND96asr A100 v18,Azure,624.240,8x A100,Mixed,-,Wikipedia+BookCorpus,27.2
+PyTorch,BERT-Large Pre-Training E2E,"3,756",1.34 Final Loss,-,ND96asr A100 v19,Azure,1702.720,8x A100,Mixed,-,Wikipedia+BookCorpus,27.2
+Tensorflow,ResNet-50 v1.5,95,76.97 Top 1,"20,388 images/sec",ND96asr A100 v20,Azure,43.067,8x A100,Mixed,256,ImageNet2012,27.2
+Tensorflow,ResNext101,192,79.34 Top 1,"10,078 images/sec",ND96asr A100 v21,Azure,87.040,8x A100,Mixed,256,Imagenet2012,27.2
+Tensorflow,SE-ResNext101,226,79.71 Top 1,"8,578 images/sec",ND96asr A100 v22,Azure,102.453,8x A100,Mixed,256,Imagenet2012,27.2
+Tensorflow,U-Net Industrial,1,.99 IoU Threshold 0.99,"1,051 images/sec",ND96asr A100 v23,Azure,0.453,8x A100,Mixed,2,DAGM2007,27.2
+Tensorflow,U-Net Medical,6,.9 Dice Score,952 images/sec,ND96asr A100 v24,Azure,2.720,8x A100,Mixed,8,EM segmentation challenge,27.2
+Tensorflow,VAE-CF,1,.43 NDCG@100,"1,642,346 users processed/sec",ND96asr A100 v25,Azure,0.453,8x A100,TF32,3072,MovieLens 20M,27.2
+Tensorflow,Wide and Deep,7,.66 MAP at 12,"3,662,293 samples/sec",ND96asr A100 v26,Azure,3.173,8x A100,TF32,16384,Kaggle Outbrain Click Prediction,27.2
+Tensorflow,BERT-LARGE,11,91.48 F1,859 sequences/sec,ND96asr A100 v27,Azure,4.987,8x A100,Mixed,24,SQuaD v1.1,27.2
+Tensorflow,Electra Base Fine Tuning,3,92.58 F1,"2,843 sequences/sec",ND96asr A100 v28,Azure,1.360,8x A100,Mixed,32,SQuaD v1.1,27.2
+Tensorflow,EfficientNet-B4,"4,231",82.81 Top 1,"2,535 images/sec",ND96asr A100 v29,Azure,1918.053,8x A100,Mixed,160,ImageNet2012,27.2
+Tensorflow,V-Net Medical,2,.84 Anterior DICE,"1,227 images/sec",ND96asr A100 v30,Azure,0.907,8x A100,TF32,2,Hippocampus head and body from Medical Segmentation Decathlon,27.2
+MXNet,ResNet-50 v1.5,85,77.14 Top 1,"23,184 images/sec",ND96amsr A100 v4,Azure,46.467,8x A100,Mixed,192,ImageNet2012,32.8
+PyTorch,Mask R-CNN,176,.34 AP Segm,167 images/sec,ND96amsr A100 v5,Azure,96.213,8x A100,TF32,8,COCO 2014,32.8
+PyTorch,SSD v1.1,43,.25 mAP,"3,092 images/sec",ND96amsr A100 v6,Azure,23.507,8x A100,Mixed,128,COCO 2017,32.8
+PyTorch,Tacotron2,99,.56 Training Loss,"306,044 total output mels/sec",ND96amsr A100 v7,Azure,54.120,8x A100,TF32,128,LJSpeech 1.1,32.8
+PyTorch,WaveGlow,285,-5.84 Training Loss,"1,486,357 output samples/sec",ND96amsr A100 v8,Azure,155.800,8x A100,Mixed,10,LJSpeech 1.1,32.8
+PyTorch,Jasper,"3,600",3.53 dev-clean WER,603 sequences/sec,ND96amsr A100 v9,Azure,1968.000,8x A100,Mixed,64,LibriSpeech,32.8
+PyTorch,Transformer,214,27.78 BLEU Score,"470,914 tokens/sec",ND96amsr A100 v10,Azure,116.987,8x A100,Mixed,10240,wmt14-en-de,32.8
+PyTorch,FastPitch,216,.18 Training Loss,"1,040,206 frames/sec",ND96amsr A100 v11,Azure,118.080,8x A100,Mixed,32,LJSpeech 1.1,32.8
+PyTorch,GNMT V2,17,24.3 BLEU Score,"916,105 total tokens/sec",ND96amsr A100 v12,Azure,9.293,8x A100,Mixed,128,wmt16-en-de,32.8
+PyTorch,NCF,0.38,.96 Hit Rate at 10,"152,159,129 samples/sec",ND96amsr A100 v13,Azure,0.208,8x A100,Mixed,131072,MovieLens 20M,32.8
+PyTorch,BERT-LARGE,3,91.05 F1,922 sequences/sec,ND96amsr A100 v14,Azure,1.640,8x A100,Mixed,32,SQuaD v1.1,32.8
+PyTorch,Transformer-XL Large,408,14.03 Perplexity,"202,130 total tokens/sec",ND96amsr A100 v15,Azure,223.040,8x A100,Mixed,16,WikiText-103,32.8
+PyTorch,Transformer-XL Base,210,22.53 Perplexity,"628,500 total tokens/sec",ND96amsr A100 v16,Azure,114.800,8x A100,Mixed,128,WikiText-103,32.8
+PyTorch,BERT-Large Pre-Training P1,"2,379",-,"3,231 sequences/sec",ND96amsr A100 v17,Azure,1300.520,8x A100,Mixed,-,Wikipedia+BookCorpus,32.8
+PyTorch,BERT-Large Pre-Training P2,"1,377",1.34 Final Loss,630 sequences/sec,ND96amsr A100 v18,Azure,752.760,8x A100,Mixed,-,Wikipedia+BookCorpus,32.8
+PyTorch,BERT-Large Pre-Training E2E,"3,756",1.34 Final Loss,-,ND96amsr A100 v19,Azure,2053.280,8x A100,Mixed,-,Wikipedia+BookCorpus,32.8
+Tensorflow,ResNet-50 v1.5,95,76.97 Top 1,"20,388 images/sec",ND96amsr A100 v20,Azure,51.933,8x A100,Mixed,256,ImageNet2012,32.8
+Tensorflow,ResNext101,192,79.34 Top 1,"10,078 images/sec",ND96amsr A100 v21,Azure,104.960,8x A100,Mixed,256,Imagenet2012,32.8
+Tensorflow,SE-ResNext101,226,79.71 Top 1,"8,578 images/sec",ND96amsr A100 v22,Azure,123.547,8x A100,Mixed,256,Imagenet2012,32.8
+Tensorflow,U-Net Industrial,1,.99 IoU Threshold 0.99,"1,051 images/sec",ND96amsr A100 v23,Azure,0.547,8x A100,Mixed,2,DAGM2007,32.8
+Tensorflow,U-Net Medical,6,.9 Dice Score,952 images/sec,ND96amsr A100 v24,Azure,3.280,8x A100,Mixed,8,EM segmentation challenge,32.8
+Tensorflow,VAE-CF,1,.43 NDCG@100,"1,642,346 users processed/sec",ND96amsr A100 v25,Azure,0.547,8x A100,TF32,3072,MovieLens 20M,32.8
+Tensorflow,Wide and Deep,7,.66 MAP at 12,"3,662,293 samples/sec",ND96amsr A100 v26,Azure,3.827,8x A100,TF32,16384,Kaggle Outbrain Click Prediction,32.8
+Tensorflow,BERT-LARGE,11,91.48 F1,859 sequences/sec,ND96amsr A100 v27,Azure,6.013,8x A100,Mixed,24,SQuaD v1.1,32.8
+Tensorflow,Electra Base Fine Tuning,3,92.58 F1,"2,843 sequences/sec",ND96amsr A100 v28,Azure,1.640,8x A100,Mixed,32,SQuaD v1.1,32.8
+Tensorflow,EfficientNet-B4,"4,231",82.81 Top 1,"2,535 images/sec",ND96amsr A100 v29,Azure,2312.947,8x A100,Mixed,160,ImageNet2012,32.8
+Tensorflow,V-Net Medical,2,.84 Anterior DICE,"1,227 images/sec",ND96amsr A100 v30,Azure,1.093,8x A100,TF32,2,Hippocampus head and body from Medical Segmentation Decathlon,32.8
+MXNet,ResNet-50 v1.5,85,77.14 Top 1,"23,184 images/sec",a2-highgpu-8g,GCP,33.292,8x A100,Mixed,192,ImageNet2012,23.5
+PyTorch,Mask R-CNN,176,.34 AP Segm,167 images/sec,a2-highgpu-8g,GCP,68.933,8x A100,TF32,8,COCO 2014,23.5
+PyTorch,SSD v1.1,43,.25 mAP,"3,092 images/sec",a2-highgpu-8g,GCP,16.842,8x A100,Mixed,128,COCO 2017,23.5
+PyTorch,Tacotron2,99,.56 Training Loss,"306,044 total output mels/sec",a2-highgpu-8g,GCP,38.775,8x A100,TF32,128,LJSpeech 1.1,23.5
+PyTorch,WaveGlow,285,-5.84 Training Loss,"1,486,357 output samples/sec",a2-highgpu-8g,GCP,111.625,8x A100,Mixed,10,LJSpeech 1.1,23.5
+PyTorch,Jasper,"3,600",3.53 dev-clean WER,603 sequences/sec,a2-highgpu-8g,GCP,1410.000,8x A100,Mixed,64,LibriSpeech,23.5
+PyTorch,Transformer,214,27.78 BLEU Score,"470,914 tokens/sec",a2-highgpu-8g,GCP,83.817,8x A100,Mixed,10240,wmt14-en-de,23.5
+PyTorch,FastPitch,216,.18 Training Loss,"1,040,206 frames/sec",a2-highgpu-8g,GCP,84.600,8x A100,Mixed,32,LJSpeech 1.1,23.5
+PyTorch,GNMT V2,17,24.3 BLEU Score,"916,105 total tokens/sec",a2-highgpu-8g,GCP,6.658,8x A100,Mixed,128,wmt16-en-de,23.5
+PyTorch,NCF,0.38,.96 Hit Rate at 10,"152,159,129 samples/sec",a2-highgpu-8g,GCP,0.149,8x A100,Mixed,131072,MovieLens 20M,23.5
+PyTorch,BERT-LARGE,3,91.05 F1,922 sequences/sec,a2-highgpu-8g,GCP,1.175,8x A100,Mixed,32,SQuaD v1.1,23.5
+PyTorch,Transformer-XL Large,408,14.03 Perplexity,"202,130 total tokens/sec",a2-highgpu-8g,GCP,159.800,8x A100,Mixed,16,WikiText-103,23.5
+PyTorch,Transformer-XL Base,210,22.53 Perplexity,"628,500 total tokens/sec",a2-highgpu-8g,GCP,82.250,8x A100,Mixed,128,WikiText-103,23.5
+PyTorch,BERT-Large Pre-Training P1,"2,379",-,"3,231 sequences/sec",a2-highgpu-8g,GCP,931.775,8x A100,Mixed,-,Wikipedia+BookCorpus,23.5
+PyTorch,BERT-Large Pre-Training P2,"1,377",1.34 Final Loss,630 sequences/sec,a2-highgpu-8g,GCP,539.325,8x A100,Mixed,-,Wikipedia+BookCorpus,23.5
+PyTorch,BERT-Large Pre-Training E2E,"3,756",1.34 Final Loss,-,a2-highgpu-8g,GCP,1471.100,8x A100,Mixed,-,Wikipedia+BookCorpus,23.5
+Tensorflow,ResNet-50 v1.5,95,76.97 Top 1,"20,388 images/sec",a2-highgpu-8g,GCP,37.208,8x A100,Mixed,256,ImageNet2012,23.5
+Tensorflow,ResNext101,192,79.34 Top 1,"10,078 images/sec",a2-highgpu-8g,GCP,75.200,8x A100,Mixed,256,Imagenet2012,23.5
+Tensorflow,SE-ResNext101,226,79.71 Top 1,"8,578 images/sec",a2-highgpu-8g,GCP,88.517,8x A100,Mixed,256,Imagenet2012,23.5
+Tensorflow,U-Net Industrial,1,.99 IoU Threshold 0.99,"1,051 images/sec",a2-highgpu-8g,GCP,0.392,8x A100,Mixed,2,DAGM2007,23.5
+Tensorflow,U-Net Medical,6,.9 Dice Score,952 images/sec,a2-highgpu-8g,GCP,2.350,8x A100,Mixed,8,EM segmentation challenge,23.5
+Tensorflow,VAE-CF,1,.43 NDCG@100,"1,642,346 users processed/sec",a2-highgpu-8g,GCP,0.392,8x A100,TF32,3072,MovieLens 20M,23.5
+Tensorflow,Wide and Deep,7,.66 MAP at 12,"3,662,293 samples/sec",a2-highgpu-8g,GCP,2.742,8x A100,TF32,16384,Kaggle Outbrain Click Prediction,23.5
+Tensorflow,BERT-LARGE,11,91.48 F1,859 sequences/sec,a2-highgpu-8g,GCP,4.308,8x A100,Mixed,24,SQuaD v1.1,23.5
+Tensorflow,Electra Base Fine Tuning,3,92.58 F1,"2,843 sequences/sec",a2-highgpu-8g,GCP,1.175,8x A100,Mixed,32,SQuaD v1.1,23.5
+Tensorflow,EfficientNet-B4,"4,231",82.81 Top 1,"2,535 images/sec",a2-highgpu-8g,GCP,1657.142,8x A100,Mixed,160,ImageNet2012,23.5
+Tensorflow,V-Net Medical,2,.84 Anterior DICE,"1,227 images/sec",a2-highgpu-8g,GCP,0.783,8x A100,TF32,2,Hippocampus head and body from Medical Segmentation Decathlon,23.5
+,,,,,,,0.000,,,,,
+MXNet,ResNet-50 v1.5,171,77.3 Top 1,"11,633 images/sec",p3.16xlarge,AWS,69.768,8x V100,Mixed,256,ImageNet2012,24.48
+PyTorch,Mask R-CNN,265,.16 AP Segm,111 images/sec,p3.16xlarge,AWS,108.120,8x V100,Mixed,8,COCO 2014,24.48
+PyTorch,Tacotron2,191,.53 Training Loss,"152,506 total output mels/sec",p3.16xlarge,AWS,77.928,8x V100,Mixed,104,LJSpeech 1.1,24.48
+PyTorch,WaveGlow,456,-5.74 Training Loss,"931,487 output samples/sec",p3.16xlarge,AWS,186.048,8x V100,Mixed,10,LJSpeech 1.1,24.48
+PyTorch,Jasper,"6,300",3.49 dev-clean WER,312 sequences/sec,p3.16xlarge,AWS,2570.400,8x V100,Mixed,64,LibriSpeech,24.48
+PyTorch,Transformer,474,27.58 BLEU Score,"208,238 tokens/sec",p3.16xlarge,AWS,193.392,8x V100,Mixed,5120,wmt14-en-de,24.48
+PyTorch,FastPitch,354,.18 Training Loss,"570,968 frames/sec",p3.16xlarge,AWS,144.432,8x V100,Mixed,32,LJSpeech 1.1,24.48
+PyTorch,GNMT V2,34,24.35 BLEU Score,"438,681 total tokens/sec",p3.16xlarge,AWS,13.872,8x V100,Mixed,128,wmt16-en-de,24.48
+PyTorch,NCF,1,.96 Hit Rate at 10,"97,664,714 samples/sec",p3.16xlarge,AWS,0.408,8x V100,Mixed,131072,MovieLens 20M,24.48
+PyTorch,BERT-LARGE,8,91.31 F1,370 sequences/sec,p3.16xlarge,AWS,3.264,8x V100,Mixed,10,SQuaD v1.1,24.48
+PyTorch,Transformer-XL Base,116,22.05 Perplexity,"284,635 total tokens/sec",p3.16xlarge,AWS,47.328,8x V100,Mixed,32,WikiText-103,24.48
+PyTorch,ResNeXt101,500,79.5 Top 1,"3,915 images/sec",p3.16xlarge,AWS,204.000,8x V100,Mixed,112,Imagenet2012,24.48
+Tensorflow,ResNet-50 v1.5,189,77.07 Top 1,"10,230 images/sec",p3.16xlarge,AWS,77.112,8x V100,Mixed,256,ImageNet2012,24.48
+Tensorflow,ResNext101,425,79.3 Top 1,"4,558 images/sec",p3.16xlarge,AWS,173.400,8x V100,Mixed,128,Imagenet2012,24.48
+Tensorflow,SE-ResNext101,534,79.8 Top 1,"3,633 images/sec",p3.16xlarge,AWS,217.872,8x V100,Mixed,96,Imagenet2012,24.48
+Tensorflow,U-Net Industrial,1,.99 IoU Threshold 0.99,665 images/sec,p3.16xlarge,AWS,0.408,8x V100,Mixed,2,DAGM2007,24.48
+Tensorflow,U-Net Medical,12,.89 DICE Score,465 images/sec,p3.16xlarge,AWS,4.896,8x V100,Mixed,8,EM segmentation challenge,24.48
+Tensorflow,VAE-CF,1,.43 NDCG@100,"907,352 users processed/sec",p3.16xlarge,AWS,0.408,8x V100,Mixed,3072,MovieLens 20M,24.48
+Tensorflow,Wide and Deep,12,.66 MAP at 12,"2,132,710 samples/sec",p3.16xlarge,AWS,4.896,8x V100,Mixed,16384,Kaggle Outbrain Click Prediction,24.48
+Tensorflow,BERT-LARGE,18,91.54 F1,333 sequences/sec,p3.16xlarge,AWS,7.344,8x V100,Mixed,10,SQuaD v1.1,24.48
+Tensorflow,Electra Base Fine Tuning,4,92.49 F1,"1,459 sequences/sec",p3.16xlarge,AWS,1.632,8x V100,Mixed,32,SQuaD v1.1,24.48
+MXNet,ResNet-50 v1.5,171,77.3 Top 1,"11,633 images/sec",p3dn.24xlarge,AWS,93.480,8x V100,Mixed,256,ImageNet2012,32.8
+PyTorch,Mask R-CNN,265,.16 AP Segm,111 images/sec,p3dn.24xlarge,AWS,144.867,8x V100,Mixed,8,COCO 2014,32.8
+PyTorch,Tacotron2,191,.53 Training Loss,"152,506 total output mels/sec",p3dn.24xlarge,AWS,104.413,8x V100,Mixed,104,LJSpeech 1.1,32.8
+PyTorch,WaveGlow,456,-5.74 Training Loss,"931,487 output samples/sec",p3dn.24xlarge,AWS,249.280,8x V100,Mixed,10,LJSpeech 1.1,32.8
+PyTorch,Jasper,"6,300",3.49 dev-clean WER,312 sequences/sec,p3dn.24xlarge,AWS,3444.000,8x V100,Mixed,64,LibriSpeech,32.8
+PyTorch,Transformer,474,27.58 BLEU Score,"208,238 tokens/sec",p3dn.24xlarge,AWS,259.120,8x V100,Mixed,5120,wmt14-en-de,32.8
+PyTorch,FastPitch,354,.18 Training Loss,"570,968 frames/sec",p3dn.24xlarge,AWS,193.520,8x V100,Mixed,32,LJSpeech 1.1,32.8
+PyTorch,GNMT V2,34,24.35 BLEU Score,"438,681 total tokens/sec",p3dn.24xlarge,AWS,18.587,8x V100,Mixed,128,wmt16-en-de,32.8
+PyTorch,NCF,1,.96 Hit Rate at 10,"97,664,714 samples/sec",p3dn.24xlarge,AWS,0.547,8x V100,Mixed,131072,MovieLens 20M,32.8
+PyTorch,BERT-LARGE,8,91.31 F1,370 sequences/sec,p3dn.24xlarge,AWS,4.373,8x V100,Mixed,10,SQuaD v1.1,32.8
+PyTorch,Transformer-XL Base,116,22.05 Perplexity,"284,635 total tokens/sec",p3dn.24xlarge,AWS,63.413,8x V100,Mixed,32,WikiText-103,32.8
+PyTorch,ResNeXt101,500,79.5 Top 1,"3,915 images/sec",p3dn.24xlarge,AWS,273.333,8x V100,Mixed,112,Imagenet2012,32.8
+Tensorflow,ResNet-50 v1.5,189,77.07 Top 1,"10,230 images/sec",p3dn.24xlarge,AWS,103.320,8x V100,Mixed,256,ImageNet2012,32.8
+Tensorflow,ResNext101,425,79.3 Top 1,"4,558 images/sec",p3dn.24xlarge,AWS,232.333,8x V100,Mixed,128,Imagenet2012,32.8
+Tensorflow,SE-ResNext101,534,79.8 Top 1,"3,633 images/sec",p3dn.24xlarge,AWS,291.920,8x V100,Mixed,96,Imagenet2012,32.8
+Tensorflow,U-Net Industrial,1,.99 IoU Threshold 0.99,665 images/sec,p3dn.24xlarge,AWS,0.547,8x V100,Mixed,2,DAGM2007,32.8
+Tensorflow,U-Net Medical,12,.89 DICE Score,465 images/sec,p3dn.24xlarge,AWS,6.560,8x V100,Mixed,8,EM segmentation challenge,32.8
+Tensorflow,VAE-CF,1,.43 NDCG@100,"907,352 users processed/sec",p3dn.24xlarge,AWS,0.547,8x V100,Mixed,3072,MovieLens 20M,32.8
+Tensorflow,Wide and Deep,12,.66 MAP at 12,"2,132,710 samples/sec",p3dn.24xlarge,AWS,6.560,8x V100,Mixed,16384,Kaggle Outbrain Click Prediction,32.8
+Tensorflow,BERT-LARGE,18,91.54 F1,333 sequences/sec,p3dn.24xlarge,AWS,9.840,8x V100,Mixed,10,SQuaD v1.1,32.8
+Tensorflow,Electra Base Fine Tuning,4,92.49 F1,"1,459 sequences/sec",p3dn.24xlarge,AWS,2.187,8x V100,Mixed,32,SQuaD v1.1,32.8
+MXNet,ResNet-50 v1.5,171,77.3 Top 1,"11,633 images/sec",ND40rs v2,Azure,62.928,8x V100,Mixed,256,ImageNet2012,22.08
+PyTorch,Mask R-CNN,265,.16 AP Segm,111 images/sec,ND40rs v3,Azure,97.520,8x V100,Mixed,8,COCO 2014,22.08
+PyTorch,Tacotron2,191,.53 Training Loss,"152,506 total output mels/sec",ND40rs v4,Azure,70.288,8x V100,Mixed,104,LJSpeech 1.1,22.08
+PyTorch,WaveGlow,456,-5.74 Training Loss,"931,487 output samples/sec",ND40rs v5,Azure,167.808,8x V100,Mixed,10,LJSpeech 1.1,22.08
+PyTorch,Jasper,"6,300",3.49 dev-clean WER,312 sequences/sec,ND40rs v6,Azure,2318.400,8x V100,Mixed,64,LibriSpeech,22.08
+PyTorch,Transformer,474,27.58 BLEU Score,"208,238 tokens/sec",ND40rs v7,Azure,174.432,8x V100,Mixed,5120,wmt14-en-de,22.08
+PyTorch,FastPitch,354,.18 Training Loss,"570,968 frames/sec",ND40rs v8,Azure,130.272,8x V100,Mixed,32,LJSpeech 1.1,22.08
+PyTorch,GNMT V2,34,24.35 BLEU Score,"438,681 total tokens/sec",ND40rs v9,Azure,12.512,8x V100,Mixed,128,wmt16-en-de,22.08
+PyTorch,NCF,1,.96 Hit Rate at 10,"97,664,714 samples/sec",ND40rs v10,Azure,0.368,8x V100,Mixed,131072,MovieLens 20M,22.08
+PyTorch,BERT-LARGE,8,91.31 F1,370 sequences/sec,ND40rs v11,Azure,2.944,8x V100,Mixed,10,SQuaD v1.1,22.08
+PyTorch,Transformer-XL Base,116,22.05 Perplexity,"284,635 total tokens/sec",ND40rs v12,Azure,42.688,8x V100,Mixed,32,WikiText-103,22.08
+PyTorch,ResNeXt101,500,79.5 Top 1,"3,915 images/sec",ND40rs v13,Azure,184.000,8x V100,Mixed,112,Imagenet2012,22.08
+Tensorflow,ResNet-50 v1.5,189,77.07 Top 1,"10,230 images/sec",ND40rs v14,Azure,69.552,8x V100,Mixed,256,ImageNet2012,22.08
+Tensorflow,ResNext101,425,79.3 Top 1,"4,558 images/sec",ND40rs v15,Azure,156.400,8x V100,Mixed,128,Imagenet2012,22.08
+Tensorflow,SE-ResNext101,534,79.8 Top 1,"3,633 images/sec",ND40rs v16,Azure,196.512,8x V100,Mixed,96,Imagenet2012,22.08
+Tensorflow,U-Net Industrial,1,.99 IoU Threshold 0.99,665 images/sec,ND40rs v17,Azure,0.368,8x V100,Mixed,2,DAGM2007,22.08
+Tensorflow,U-Net Medical,12,.89 DICE Score,465 images/sec,ND40rs v18,Azure,4.416,8x V100,Mixed,8,EM segmentation challenge,22.08
+Tensorflow,VAE-CF,1,.43 NDCG@100,"907,352 users processed/sec",ND40rs v19,Azure,0.368,8x V100,Mixed,3072,MovieLens 20M,22.08
+Tensorflow,Wide and Deep,12,.66 MAP at 12,"2,132,710 samples/sec",ND40rs v20,Azure,4.416,8x V100,Mixed,16384,Kaggle Outbrain Click Prediction,22.08
+Tensorflow,BERT-LARGE,18,91.54 F1,333 sequences/sec,ND40rs v21,Azure,6.624,8x V100,Mixed,10,SQuaD v1.1,22.08
+Tensorflow,Electra Base Fine Tuning,4,92.49 F1,"1,459 sequences/sec",ND40rs v22,Azure,1.472,8x V100,Mixed,32,SQuaD v1.1,22.08
+MXNet,ResNet-50 v1.5,171,77.3 Top 1,"11,633 images/sec",,GCP,56.544,8x V100,Mixed,256,ImageNet2012,19.84
+PyTorch,Mask R-CNN,265,.16 AP Segm,111 images/sec,,GCP,87.627,8x V100,Mixed,8,COCO 2014,19.84
+PyTorch,Tacotron2,191,.53 Training Loss,"152,506 total output mels/sec",,GCP,63.157,8x V100,Mixed,104,LJSpeech 1.1,19.84
+PyTorch,WaveGlow,456,-5.74 Training Loss,"931,487 output samples/sec",,GCP,150.784,8x V100,Mixed,10,LJSpeech 1.1,19.84
+PyTorch,Jasper,"6,300",3.49 dev-clean WER,312 sequences/sec,,GCP,2083.200,8x V100,Mixed,64,LibriSpeech,19.84
+PyTorch,Transformer,474,27.58 BLEU Score,"208,238 tokens/sec",,GCP,156.736,8x V100,Mixed,5120,wmt14-en-de,19.84
+PyTorch,FastPitch,354,.18 Training Loss,"570,968 frames/sec",,GCP,117.056,8x V100,Mixed,32,LJSpeech 1.1,19.84
+PyTorch,GNMT V2,34,24.35 BLEU Score,"438,681 total tokens/sec",,GCP,11.243,8x V100,Mixed,128,wmt16-en-de,19.84
+PyTorch,NCF,1,.96 Hit Rate at 10,"97,664,714 samples/sec",,GCP,0.331,8x V100,Mixed,131072,MovieLens 20M,19.84
+PyTorch,BERT-LARGE,8,91.31 F1,370 sequences/sec,,GCP,2.645,8x V100,Mixed,10,SQuaD v1.1,19.84
+PyTorch,Transformer-XL Base,116,22.05 Perplexity,"284,635 total tokens/sec",,GCP,38.357,8x V100,Mixed,32,WikiText-103,19.84
+PyTorch,ResNeXt101,500,79.5 Top 1,"3,915 images/sec",,GCP,165.333,8x V100,Mixed,112,Imagenet2012,19.84
+Tensorflow,ResNet-50 v1.5,189,77.07 Top 1,"10,230 images/sec",,GCP,62.496,8x V100,Mixed,256,ImageNet2012,19.84
+Tensorflow,ResNext101,425,79.3 Top 1,"4,558 images/sec",,GCP,140.533,8x V100,Mixed,128,Imagenet2012,19.84
+Tensorflow,SE-ResNext101,534,79.8 Top 1,"3,633 images/sec",,GCP,176.576,8x V100,Mixed,96,Imagenet2012,19.84
+Tensorflow,U-Net Industrial,1,.99 IoU Threshold 0.99,665 images/sec,,GCP,0.331,8x V100,Mixed,2,DAGM2007,19.84
+Tensorflow,U-Net Medical,12,.89 DICE Score,465 images/sec,,GCP,3.968,8x V100,Mixed,8,EM segmentation challenge,19.84
+Tensorflow,VAE-CF,1,.43 NDCG@100,"907,352 users processed/sec",,GCP,0.331,8x V100,Mixed,3072,MovieLens 20M,19.84
+Tensorflow,Wide and Deep,12,.66 MAP at 12,"2,132,710 samples/sec",,GCP,3.968,8x V100,Mixed,16384,Kaggle Outbrain Click Prediction,19.84
+Tensorflow,BERT-LARGE,18,91.54 F1,333 sequences/sec,,GCP,5.952,8x V100,Mixed,10,SQuaD v1.1,19.84
+Tensorflow,Electra Base Fine Tuning,4,92.49 F1,"1,459 sequences/sec",,GCP,1.323,8x V100,Mixed,32,SQuaD v1.1,19.84
+,,,,,,,0.000,,,,,
+MXNet,ResNet-50 v1.5,507,77.28 Top 1,"3,860 images/sec",g4dn.metal,AWS,66.113,8x T4,Mixed,192,ImageNet2012,7.824
+PyTorch,SE-ResNeXt101,"1,770",79.94 Top1,"1,102 images/sec",g4dn.metal,AWS,230.808,8x T4,Mixed,112,Imagenet2012,7.824
+PyTorch,Tacotron2,241,.53 Training Loss,"125,992 total output mels/sec",g4dn.metal,AWS,31.426,8x T4,Mixed,104,LJSpeech 1.1,7.824
+PyTorch,WaveGlow,"1,041",-5.82 Training Loss,"400,494 output samples/sec",g4dn.metal,AWS,135.746,8x T4,Mixed,10,LJSpeech 1.1,7.824
+PyTorch,Transformer,"2,234",27.56 BLEU Score,"42,963 tokens/sec",g4dn.metal,AWS,291.314,8x T4,Mixed,2560,wmt14-en-de,7.824
+PyTorch,FastPitch,319,.21 Training Loss,"281,406 frames/sec",g4dn.metal,AWS,41.598,8x T4,Mixed,32,LJSpeech 1.1,7.824
+PyTorch,GNMT V2,92,24.12 BLEU Score,"157,601 total tokens/sec",g4dn.metal,AWS,11.997,8x T4,Mixed,128,wmt16-en-de,7.824
+PyTorch,NCF,2,.96 Hit Rate at 10,"28,643,324 samples/sec",g4dn.metal,AWS,0.261,8x T4,Mixed,131072,MovieLens 20M,7.824
+PyTorch,BERT-LARGE,24,91.34 F1,125 sequences/sec,g4dn.metal,AWS,3.130,8x T4,Mixed,10,SQuaD v1.1,7.824
+PyTorch,Transformer-XL Base,318,22.12 Perplexity,"103,740 total tokens/sec",g4dn.metal,AWS,41.467,8x T4,Mixed,32,WikiText-103,7.824
+Tensorflow,ResNet-50 v1.5,550,76.81 Top 1,"3,496 images/sec",g4dn.metal,AWS,71.720,8x T4,Mixed,256,ImageNet2012,7.824
+Tensorflow,U-Net Industrial,2,.99 IoU Threshold,284 images/sec,g4dn.metal,AWS,0.261,8x T4,Mixed,2,DAGM2007,7.824
+Tensorflow,U-Net Medical,31,.9 DICE Score,155 images/sec,g4dn.metal,AWS,4.042,8x T4,Mixed,8,EM segmentation challenge,7.824
+Tensorflow,VAE-CF,2,.43 NDCG@100,"354,626 users processed/sec",g4dn.metal,AWS,0.261,8x T4,Mixed,3072,MovieLens 20M,7.824
+Tensorflow,SSD,112,.28 mAP,549 images/sec,g4dn.metal,AWS,14.605,8x T4,Mixed,32,COCO 2017,7.824
+Tensorflow,Mask R-CNN,492,.34 AP Segm,53 samples/sec,g4dn.metal,AWS,64.157,8x T4,Mixed,4,COCO 2014,7.824
+Tensorflow,ResNext101,"1,222",79.22 Top 1,"1,577 images/sec",g4dn.metal,AWS,159.349,8x T4,Mixed,128,Imagenet2012,7.824
+Tensorflow,SE-ResNext101,"1,648",79.86 Top 1,"1,169 images/sec",g4dn.metal,AWS,214.899,8x T4,Mixed,96,Imagenet2012,7.824
+Tensorflow,Electra Base Fine Tuning,9,92.48 F1,396 sequences/sec,g4dn.metal,AWS,1.174,8x T4,Mixed,16,SQuaD v1.1,7.824
+Tensorflow,Wide and Deep,27,.66 MAP at 12,"764,329 samples/sec",g4dn.metal,AWS,3.521,8x T4,Mixed,16384,Kaggle Outbrain Click Prediction,7.824
