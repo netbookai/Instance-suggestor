@@ -7,9 +7,10 @@ Data Science training is a computationally expensive job. With each computataion
 ### V0 (suggest.py)
 
 Python Module which takes 
- 1. Instance Name
- 2. Cloud Provider
- 3. Region
+ 1. Source data
+ 2. Instance Name
+ 3. Cloud Provider
+ 4. Region
 
 and outputs
  1. Alternate Instances across different cloud providers same region
@@ -25,10 +26,11 @@ and outputs
 
 ### V1 (instance-suggestor.py)
 
-Python Module which takes 
- 1. Framework (MXNet, Tensorflow, PyTorch)
- 2. Network
- 3. Dataset 
+Python Module which takes
+ 1. Source data 
+ 2. Framework (MXNet, Tensorflow, PyTorch)
+ 3. Network
+ 4. Dataset 
 
 and outputs
  1. Similar instances across different cards
@@ -42,17 +44,28 @@ and outputs
  
 ### How To Use
 
-***Requires basic Python packages like numpy, pandas, sys, argparse preinstalled***
+***Requires basic Python packages like numpy, pandas preinstalled***
 
 To run this project, clone the repository and follow below steps.
 
+#### Using as a Python Package
+**You can also do a pip install of the latest version of InstanceSuggestor**
+
 ```
-$ cd Instance-picker
-$ python3 instance-suggestor.py #run V1 with default arguments
-$ python3 instance-suggestor.py -i [input-file-name] -f [framework] -n [network] -d [dataset] #to run custom V1
-$ python3 suggest.py #to run V0 with default arguments
-$ python3 suggest.py -i [input-file-name] -ins [instance-name] -p [provider] -r [region] #to run custom V0
+$ pip install InstanceSuggestor
+$ python3 #open a python shell
+> import InstanceSuggestor as inst
+> inst.get_fastest_instance() #outputs result based on default arguments
+> inst.get_fastest_instance(url, framework, network, dataset) #to make a custom call to function
+> inst.get_similar_instances(url, framework, network, dataset)
+> inst.get_cheapest_instance(url, framework, network, dataset)
+> inst.predictor_sameRegion(url, instance, region)
+> inst.predictor_anyRegion(url, instance, provider, region)
+> inst.predictor_cheapest(url, instance, region)
+> inst.predictor_cheapest2(url, region)
+> inst.predictor_sameRegion2(url, instance, provider, region)
 ```
+
 
 ### Example Runs
 
