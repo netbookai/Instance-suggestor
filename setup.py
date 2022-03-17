@@ -25,6 +25,7 @@ setup(
 	"Operating System :: OS Independent",],
 	description = "A cloud instance suggestor",
 	long_description=open('README.md').read(),
+	long_description_content_type="text/markdown",
 	name = 'InstanceSuggestor',
 	version = PKG_VERSION,
 	zip_safe = False,

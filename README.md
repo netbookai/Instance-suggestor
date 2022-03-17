@@ -1,4 +1,4 @@
-# Instance-picker
+# Instance-Suggestor
 Python module to help you pick the cheapest and the best performant instance any where across the globe on any cloud provider
 
 ### Introduction
@@ -46,8 +46,6 @@ and outputs
 
 ***Requires basic Python packages like numpy, pandas preinstalled***
 
-To run this project, clone the repository and follow below steps.
-
 #### Using as a Python Package
 **You can also do a pip install of the latest version of InstanceSuggestor**
 
@@ -69,13 +67,13 @@ $ python3 #open a python shell
 
 ### Example Runs
 
-> V1
+> get_similar_instances()
 
-![Screenshot 2022-03-04 at 4 17 48 PM](https://user-images.githubusercontent.com/30073239/156749629-bc1119bd-75f5-4441-9887-c2aa76a81180.png)
+![get_similar](./images/get_similar.png)
 
-> V0
+> predictor_cheapest() : input shows an AWS instance and the suggestor provides a cheaper instance on GCP.
 
-![Screenshot 2022-03-04 at 4 27 55 PM](https://user-images.githubusercontent.com/30073239/156751131-4da9d119-51c4-4e5c-bbda-7072fe527883.png)
+![get_cheapest](./images/get_cheapest.png)
 
 ### Project Status
  Ongoing
